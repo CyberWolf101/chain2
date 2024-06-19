@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --btn-color: #034e88;
+    --btn-color2: #031b85;
+    --btn-color3: #151c36;
+    --bg: #000000;
+    --other: #2c2e61;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0 3px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    color: white;
+    height: 110vh;
+    background-color: var(--bg);
+}
+
+.special-btn {
+    background-color: var(--btn-color3);
+    color: white;
+    padding: 12px 23px;
+    width: 90%;
+    margin-top: 20px;
+    display: flex;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+
+.corner-border-div {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: red;
+}
+
+.corner-border-div::before,
+.corner-border-div::after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    width: 0;
+    height: 0;
+}
+
+.corner-border-div::before {
+    top: 0;
+    left: 0;
+    border-width: 5px 0 0 5px;
+    border-color: red transparent transparent red;
+}
+
+.corner-border-div::after {
+    bottom: 0;
+    right: 0;
+    border-width: 0 5px 5px 0;
+    border-color: transparent red red transparent;
+}
+
+.icons {
+    height: 30px;
+}
+
+.stake-btn {
+    background-color: var(--btn-color);
+    background: linear-gradient(to left, #0c65a9 40%, var(--btn-color) 70%);
+    color: white;
+    padding: 15px;
+    width: 100%;
+    margin-top: 18px;
+}
+
+.assets-con {
+    border-inline-start: 2px solid;
+    border-image-source: radial-gradient(circle at top left , var(--btn-color), transparent 50%);
+    border-image-outset: 3px;
+    border-block-start: 2px solid;
+    border-bottom: 7px solid gold;
+    border-image-slice: 1;
+    padding: 3px;
+    
+}
